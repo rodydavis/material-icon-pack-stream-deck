@@ -1,0 +1,7 @@
+{
+  "name": "material-icons-stream-deck",
+  "version": "1.0.0",
+  "scripts": {
+    "copy": "node scripts/copy.js"
+  }
+}

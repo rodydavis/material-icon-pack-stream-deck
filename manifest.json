@@ -1,0 +1,9 @@
+{
+    "Name": "Material Icons",
+    "Version": "1.0.0",
+    "Description": "Material Icons from the WaveLink application.",
+    "Author": "Material Design",
+    "URL": "https://fonts.google.com/icons?selected=Material+Icons",
+    "Icon": "icon.png",
+    "License": "license.txt"
+}
