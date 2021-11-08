@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 
-function copyIcons(pathToIcons, pathToDestination, metaFile) {
+function copyIcons(pathToIcons, outputDir) {
     const icons = [];
     const iconGroups = fs.readdirSync(pathToIcons);
     for (const iconGroup of iconGroups) {
@@ -30,12 +30,12 @@ function copyIcons(pathToIcons, pathToDestination, metaFile) {
         console.log('copying icon', icon.name);
         const iconName = icon.name;
         const iconPath = icon.path;
-        const destPath = path.join(pathToDestination, `${iconName}.svg`);
+        const destPath = path.join(outputDir, 'icons', `${iconName}.svg`);
         let contents = fs.readFileSync(iconPath).toString();
         contents = contents.replace('width="24">', 'width="24" fill="white">');
         fs.writeFileSync(destPath, contents);
     }
-    fs.writeFileSync(metaFile, JSON.stringify(icons.map(icon => ({
+    fs.writeFileSync(path.join(outputDir, 'icons.json'), JSON.stringify(icons.map(icon => ({
         "path": `${icon.name}.svg`,
         "name": icon.name,
         "tags": [
@@ -44,4 +44,4 @@ function copyIcons(pathToIcons, pathToDestination, metaFile) {
     })), null, 2));
 }
 
-copyIcons(path.join(__dirname, '../third_party/google-material-icons/src'), path.join(__dirname, '../icons'), path.join(__dirname, '../icons.json'));
+copyIcons(path.join(__dirname, '../third_party/google-material-icons/src'), path.join(__dirname, '../com.google.material.sdIconPack'));

@@ -2,6 +2,7 @@
   "name": "material-icons-stream-deck",
   "version": "1.0.0",
   "scripts": {
-    "copy": "node scripts/copy.js"
+    "copy": "node scripts/copy.js",
+    "build": "./DistributionTool -b -i com.google.material.sdIconPack -o com.google.material.sdIconPack"
   }
 }
