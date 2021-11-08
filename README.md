@@ -2,6 +2,8 @@
 
 Material Icons in the correct format needed for the Stream Deck.
 
+![](/screenshot.jpeg)
+
 ## Links
 
 - https://fonts.google.com/icons?selected=Material+Icons
