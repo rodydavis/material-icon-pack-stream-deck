@@ -2,6 +2,8 @@
 
 Material Icons in the correct format needed for the Stream Deck.
 
+https://apps.elgato.com/icons/com.google.material
+
 ![screenshot](https://user-images.githubusercontent.com/31253215/140813341-b1a278d7-175d-4362-82ac-5bd995578b57.jpeg)
 
 ## Installing
