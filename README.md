@@ -4,6 +4,11 @@ Material Icons in the correct format needed for the Stream Deck.
 
 ![](/screenshot.jpeg)
 
+## Installing
+
+Download and extract the icon pack then install the plugin:
+https://github.com/rodydavis/material-icon-pack-stream-deck/files/7499891/com.google.material.streamDeckIconPack.zip
+
 ## Links
 
 - https://fonts.google.com/icons?selected=Material+Icons
